@@ -18,28 +18,16 @@ class Book {
   getSubject(){
     return this.subject;
   }
+  addBook(book){
+      return this.addItem(book);
+  }
+  getBookNames(){
+      return this.mapBy('name');
+  }
 }
 
 
-
-// var English = new Book('Family and Friends', '3');
-// var History = new Book('Ancient history', '6');
-// var Biology = new Book('Biology', '5');
-// var Geograpgy = new Book('Geograpgy', '5');
-//module.exports = Book;
-
-               //Start repository
-		
-//		findAll(){};
-//		findById(id){};
-//		findBy(field,value){};
-//		removeById(id){};
-//		create(Builder){};
-//		
-//		//End repository
-//		
-//		addBook(){};
-//		
+               
 
 
 module.exports = Book;
