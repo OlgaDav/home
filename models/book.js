@@ -18,12 +18,6 @@ class Book {
   getSubject(){
     return this.subject;
   }
-  addBook(book){
-      return this.addItem(book);
-  }
-  getBookNames(){
-      return this.mapBy('name');
-  }
 }
 
 
