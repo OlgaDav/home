@@ -9,18 +9,18 @@
 const Book_Services = require('../services/Book-Services.js');
 
 //Здесь создаем объект на сервис, для раоты с книгами.
-const bService = new Book_Services ();
+const library = new Book_Services ();
+
 //Создаем кники
-bService.greateBook('Algebra', 'levelOne');
-bService.greateBook('English', 'levelThree2');
-bService.greateBook('English2', 'levelThree3');
-bService.greateBook('English3', 'levelThree4');
-bService.greateBook('English4', 'levelThree5');
+library.createBook('History', 'Ancient history 6 level');
 
-
-
-console.log(bService.findAll());
+console.log(library.findAll());
 console.log("=============================================");
-bService.removeById(3);
-console.log(bService.findAll());
+library.removeById(1);
+console.log(library.findAll());
 
+console.log("=============================================");
+library.createBook('Geography', 'Geography 6 level');
+console.log(library.findAll());
+console.log("=============================================");
+console.log(library.getListOfBooks());
